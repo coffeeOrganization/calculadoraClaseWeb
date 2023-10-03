@@ -10,26 +10,27 @@
 <body>
     <div><h1>Calculadora</h1></div>
     <div>
-        <div><input type="text"></div>
+        <div><input type="text" id="input"></div>
         <div id="botones">
             <div id="numeros">
-                <div>0</div>
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>
-                <div>7</div>
-                <div>8</div>
-                <div>9</div>
+                <div onclick="probando(0)">0</div>
+                <div onclick="probando(1)">1</div>
+                <div onclick="probando(2)">2</div>
+                <div onclick="probando(3)">3</div>
+                <div onclick="probando(4)">4</div>
+                <div onclick="probando(5)">5</div>
+                <div onclick="probando(6)">6</div>
+                <div onclick="probando(7)">7</div>
+                <div onclick="probando(8)">8</div>
+                <div onclick="probando(9)">9</div>
             </div>
             <div id="operadores">
-                <div>+</div>
-                <div>-</div>
-                <div>*</div>
-                <div>/</div>
-                <div>=</div>
+                <div>b</div>
+                <div onclick="mas()">+</div>
+                <div onclick="menos()">-</div>
+                <div onclick="multiplicar()">*</div>
+                <div onclick="dividir()">/</div>
+                <div onclick="calcular()">=</div>
             </div>
         </div>
     </div>
