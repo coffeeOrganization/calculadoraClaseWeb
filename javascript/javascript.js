@@ -30,6 +30,13 @@ function calcular(){
     cantidadCaracter = primerNumero.length + 1;
     cantidadCaracterSegundo = segundoNumero.length;
     segundoNumero = segundoNumero.slice(cantidadCaracter, cantidadCaracterSegundo);
+
+    switch (operador){
+        case "+":{
+            resultado=parseInt(primerNumero) + parseInt(segundoNumero);
+            input.value=resultado;
+        } 
+    }
     alert(segundoNumero);
 }
 
