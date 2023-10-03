@@ -1,0 +1,47 @@
+body{
+    background-color: aqua;
+}
+
+#botones{
+    background-color: azure;
+    min-width: 300px;
+    max-width: 600px;
+
+    display: grid;
+    grid-template: 
+    "numeros operadores" 300px /
+    1fr 1fr;
+}
+#botones > #numeros{
+    grid-area: numeros;
+    width: auto;
+    height: 100px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 2em;
+}
+#numeros>div{
+    width: 50px;
+    background-color: rgb(100, 193, 193);
+}
+#botones > #operadores{
+    grid-area: operadores;
+    background-color: green;
+    height: 100px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: center;
+    align-items: center;
+    font-size: 2em;
+    gap: 10px;
+}
+#operadores>div{
+    width: 50px;
+    background-color: rgb(112, 140, 140);
+    display: flex;
+}
