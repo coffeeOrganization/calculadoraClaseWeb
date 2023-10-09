@@ -3,7 +3,7 @@ const input = document.getElementById("input");
 let primerNumero="";
 let segundoNumero="";
 let operador="";
-function probando(valor){
+function ingresarNumeros(valor){
     input.value += valor;
 }
 
@@ -13,14 +13,17 @@ function mas(){
     operador="+";
 }
 function menos(){
+    primerNumero=input.value;
     input.value += "-";
     operador="-";
 }
 function multiplicar(){
+    primerNumero=input.value;
     input.value += "*";
     operador="*";
 }
 function dividir(){
+    primerNumero=input.value;
     input.value += "/";
     operador="/";
 }
@@ -35,7 +38,23 @@ function calcular(){
         case "+":{
             resultado=parseInt(primerNumero) + parseInt(segundoNumero);
             input.value=resultado;
+            break;
         } 
+        case "-":{
+            resultado=parseInt(primerNumero) - parseInt(segundoNumero);
+            input.value=resultado;
+            break;
+        }
+        case "*":{
+            resultado=parseInt(primerNumero) * parseInt(segundoNumero);
+            input.value=resultado;
+            break;
+        }
+        case "/":{
+            resultado=parseInt(primerNumero) / parseInt(segundoNumero);
+            input.value=resultado;
+            break;
+        }
     }
     alert(segundoNumero);
 }

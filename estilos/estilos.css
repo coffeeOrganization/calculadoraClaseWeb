@@ -1,7 +1,9 @@
 body{
     background-color: aqua;
 }
-
+#calculadora{
+    user-select: none;
+}
 #botones{
     background-color: azure;
     min-width: 300px;
@@ -23,10 +25,14 @@ body{
     align-items: center;
     gap: 10px;
     font-size: 2em;
+
+    cursor: pointer;
 }
 #numeros>div{
     width: 50px;
     background-color: rgb(100, 193, 193);
+
+    cursor: pointer;
 }
 #botones > #operadores{
     grid-area: operadores;
@@ -44,4 +50,7 @@ body{
     width: 50px;
     background-color: rgb(112, 140, 140);
     display: flex;
+
+    cursor: pointer;
+    user-select: none;
 }
