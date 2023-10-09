@@ -3,8 +3,14 @@ const input = document.getElementById("input");
 let primerNumero="";
 let segundoNumero="";
 let operador="";
+
 function ingresarNumeros(valor){
     input.value += valor;
+}
+function borrar(){
+    let textoIngresado = input.value;
+    textoIngresado = textoIngresado.slice(0,textoIngresado.length -1);
+    input.value=textoIngresado;
 }
 
 function mas(){

@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link de fonts.googleapis.com-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script defer src="javascript/javascript.js"></script>
     <link rel="stylesheet" href="estilos/estilos.css">
     <title>Calculadora</title>
@@ -25,7 +27,7 @@
                 <div onclick="ingresarNumeros(9)">9</div>
             </div>
             <div id="operadores">
-                <div>b</div>
+                <div onclick="borrar()"><span class="material-symbols-outlined">backspace</span></div>
                 <div onclick="mas()">+</div>
                 <div onclick="menos()">-</div>
                 <div onclick="multiplicar()">*</div>
