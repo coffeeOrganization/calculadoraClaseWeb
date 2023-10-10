@@ -58,7 +58,12 @@ function calcular(){
         }
         case "/":{
             resultado=parseInt(primerNumero) / parseInt(segundoNumero);
-            input.value=resultado;
+            if(segundoNumero != 0){
+                input.value=resultado;
+            }else{
+                input.value = "";
+                alert("Error, no se puede dividir por 0");
+            }
             break;
         }
     }
